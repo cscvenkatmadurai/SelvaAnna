@@ -14,4 +14,12 @@ public class CalculatorTest {
     public  void shouldTestSub(){
         assertEquals(5.0, new Calculator(15, 10).sub());//ctrl+alt+n inline ctrl+alt+v extract var
     }
+    @Test
+    public  void shouldTestMul(){
+        assertEquals(150.0, new Calculator(15, 10).mul());//ctrl+alt+n inline ctrl+alt+v extract var
+    }
+    @Test
+    public  void shouldTestDiv(){
+        assertEquals(1.5, new Calculator(15, 10).div());//ctrl+alt+n inline ctrl+alt+v extract var
+    }
 }
