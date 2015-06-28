@@ -10,4 +10,8 @@ public class CalculatorTest {
     public  void shouldTestAdd(){
         assertEquals(15.0, new Calculator(5, 10).add());//ctrl+alt+n inline ctrl+alt+v extract var
     }
+    @Test
+    public  void shouldTestSub(){
+        assertEquals(5.0, new Calculator(15, 10).sub());//ctrl+alt+n inline ctrl+alt+v extract var
+    }
 }
