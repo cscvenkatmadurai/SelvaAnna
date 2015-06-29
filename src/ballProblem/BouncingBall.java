@@ -21,15 +21,7 @@ public class BouncingBall extends Ball {
     }
 
 
-    public void bounce(){
-        if(cycle){
-            increaseHeight();
 
-        }else{
-            decreaseHeight();
-        }
-        invertCycle();
-    }
 
     private void invertCycle() {
         if(height == maxHeight || height == 0){
@@ -40,7 +32,13 @@ public class BouncingBall extends Ball {
 
     @Override
     public int ballOperation() {
-        bounce();
+        if(cycle){
+            increaseHeight();
+
+        }else{
+            decreaseHeight();
+        }
+        invertCycle();
         return height;
     }
 }

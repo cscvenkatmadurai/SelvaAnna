@@ -21,15 +21,7 @@ public class ElasticBall extends Ball {
         size -=1;
     }
 
-    public void expandBall(){
-        if(cycle){
-            increaseSize();
-        }else{
-            decreaseSize();
-        }
-        invertCycle();
 
-    }
 
     private void invertCycle() {
         if(size == maxSize || size == 0){
@@ -39,7 +31,12 @@ public class ElasticBall extends Ball {
 
     @Override
     public int ballOperation() {
-        expandBall();
+        if(cycle){
+            increaseSize();
+        }else{
+            decreaseSize();
+        }
+        invertCycle();
         return size;
     }
 }
