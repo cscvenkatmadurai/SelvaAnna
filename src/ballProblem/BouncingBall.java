@@ -4,9 +4,9 @@ package ballProblem;
  * Created by HARISH on 6/29/2015.
  */
 public class BouncingBall extends Ball {
-    protected int height;
-    protected int maxHeight;
-    protected boolean cycle;
+    private int height;
+    private int maxHeight;
+    private boolean cycle;
     public BouncingBall(String name, String colour, int maxHeight) {
         super(name, colour);
         this.maxHeight = maxHeight;
